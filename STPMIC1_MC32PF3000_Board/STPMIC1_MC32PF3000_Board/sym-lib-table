@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name TI_PMIC)(type Legacy)(uri ${KIPRJMOD}/../../../KicadLibrary/symbol/PWR/PMIC/TI_PMIC.lib)(options "")(descr ""))
+  (lib (name Microchip_PMIC)(type Legacy)(uri ${KIPRJMOD}/../../../KicadLibrary/symbol/PWR/PMIC/Microchip_PMIC.lib)(options "")(descr ""))
+  (lib (name ST_PMIC)(type Legacy)(uri ${KIPRJMOD}/../../../KicadLibrary/symbol/PWR/PMIC/ST_PMIC.lib)(options "")(descr ""))
+  (lib (name NXP_PMIC)(type Legacy)(uri ${KIPRJMOD}/../../../KicadLibrary/symbol/PWR/PMIC/NXP_PMIC.lib)(options "")(descr ""))
+  (lib (name DG46x)(type Legacy)(uri /Users/chrisjsutton@uk.ibm.com/Projects/Hardware/KicadLibrary/symbol/LOGIC/DG46x.lib)(options "")(descr ""))
+  (lib (name DG470)(type Legacy)(uri /Users/chrisjsutton@uk.ibm.com/Projects/Hardware/KicadLibrary/symbol/LOGIC/DG470.lib)(options "")(descr ""))
+)

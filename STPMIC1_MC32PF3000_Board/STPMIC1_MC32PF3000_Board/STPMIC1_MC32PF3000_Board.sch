@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 5
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "System Overview"
+Date "2021-03-02"
+Rev "A"
+Comp "Chris Sutton"
 Comment1 ""
 Comment2 ""
 Comment3 ""

@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 5
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "PF3000 DEV"
+Date "2021-03-02"
+Rev "A"
+Comp "Chris Sutton"
+Comment1 "Development connections for PF3000"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1065,17 +1065,17 @@ Text Notes 1650 3725 2    50   ~ 0
 BATTERY\nINPUT
 Wire Notes Line
 	4075 750  4075 4625
-Text Notes 1625 975  0    100  ~ 0
+Text Notes 1625 975  0    118  ~ 0
 POWER INPUT
 Wire Notes Line
 	4625 4625 4625 11100
 Wire Notes Line
 	800  4625 4625 4625
-Text Notes 1300 5175 0    100  ~ 0
+Text Notes 1300 5175 0    118  ~ 0
 SUBSYSTEM POWER JUMPERS
-Text Notes 8750 8975 0    100  ~ 0
+Text Notes 8750 8975 0    118  ~ 0
 SYSTEM STATUS INDICATORS
-Text Notes 13575 1650 0    100  ~ 0
+Text Notes 13550 1575 0    118  ~ 0
 DIAGNOSTICS OUTPUT\nCONNECTOR
 $Sheet
 S 9850 1850 1175 5325
@@ -1161,9 +1161,9 @@ Wire Wire Line
 	14500 8025 13850 8025
 Text Label 13850 8025 0    50   ~ 0
 SCL
-Text Notes 13300 4250 0    100  ~ 0
+Text Notes 13250 4125 0    118  ~ 0
 POWER OUTPUT CONNECTOR
-Text Notes 13425 7625 0    100  ~ 0
+Text Notes 13200 7500 0    118  ~ 0
 DEBUG OUTPUT CONNECTOR
 $Comp
 L Connector_Generic:Conn_02x13_Odd_Even J21
@@ -1193,8 +1193,8 @@ Wire Notes Line
 	12900 600  12900 9875
 Wire Notes Line
 	7750 8675 7750 11075
-Text Notes 5600 8950 0    100  ~ 0
+Text Notes 5600 8950 0    118  ~ 0
 VDBG LDO
-Text Notes 7025 1100 0    100  ~ 0
+Text Notes 7000 1275 0    118  ~ 0
 POWER MANAGEMENT IC
 $EndSCHEMATC

@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 4 5
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "PF3000 DEV"
+Date "2021-03-02"
+Rev "A"
+Comp "Chris Sutton"
+Comment1 "Development connections for PF3000"
 Comment2 ""
 Comment3 ""
 Comment4 ""

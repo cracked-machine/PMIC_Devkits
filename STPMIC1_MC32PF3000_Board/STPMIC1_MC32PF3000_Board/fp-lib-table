@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name STPMIC1)(type KiCad)(uri ${KIPRJMOD}/../../../KicadLibrary/footprint/PWR/PMIC/STPMIC1.pretty)(options "")(descr ""))
+  (lib (name TinyNetTies)(type KiCad)(uri ${KIPRJMOD}/../../../KicadLibrary/footprint/MISC/TinyNetTies.pretty)(options "")(descr ""))
 )

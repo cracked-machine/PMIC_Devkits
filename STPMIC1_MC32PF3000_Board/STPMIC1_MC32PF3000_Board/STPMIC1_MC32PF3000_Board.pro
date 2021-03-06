@@ -1,4 +1,4 @@
-update=Tuesday, 02 March 2021 at 09:52:16
+update=Saturday, 06 March 2021 at 21:07:02
 version=1
 last_client=kicad
 [general]
@@ -33,15 +33,17 @@ TrackWidth2=0.2
 TrackWidth3=0.4
 TrackWidth4=0.5
 TrackWidth5=1
+TrackWidth6=1.5
+TrackWidth7=2
 ViaDiameter1=0.6
 ViaDrill1=0.3
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
-SilkLineWidth=0.12
-SilkTextSizeV=1
-SilkTextSizeH=1
-SilkTextSizeThickness=0.15
+SilkLineWidth=0.09999999999999999
+SilkTextSizeV=0.7999999999999999
+SilkTextSizeH=0.7999999999999999
+SilkTextSizeThickness=0.09999999999999999
 SilkTextItalic=0
 SilkTextUpright=1
 CopperLineWidth=0.2
@@ -63,15 +65,15 @@ SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=F.Cu
+Name=Signal.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
-Name=In1.Cu
+Name=Ground.Cu
 Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
-Name=In2.Cu
+Name=SmallSignal+Power.Cu
 Type=2
 Enabled=1
 [pcbnew/Layer.In3.Cu]
@@ -187,7 +189,7 @@ Name=In30.Cu
 Type=0
 Enabled=0
 [pcbnew/Layer.B.Cu]
-Name=B.Cu
+Name=SmallSignal+Ground.Cu
 Type=2
 Enabled=1
 [pcbnew/Layer.B.Adhes]
@@ -243,7 +245,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=docs/schema/svg
+PlotDirectoryName=docs/schema/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew

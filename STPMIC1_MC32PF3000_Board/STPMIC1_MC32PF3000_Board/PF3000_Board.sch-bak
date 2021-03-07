@@ -830,13 +830,6 @@ F 3 "~" H 1775 3700 50  0001 C CNN
 	1    1775 3700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2400 2025 2700 2025
-Connection ~ 2400 2025
-Wire Wire Line
-	2400 2125 2400 2025
-Wire Wire Line
-	2150 2125 2400 2125
 $Comp
 L power:GNDS #PWR028
 U 1 1 60E92965
@@ -854,8 +847,6 @@ Wire Wire Line
 	2150 2225 2400 2225
 Text Label 2700 2025 2    50   ~ 0
 VPWR
-Wire Wire Line
-	2150 2025 2400 2025
 Text Notes 1300 1575 0    50   ~ 0
 3.7 V to 5.5 V Supply input (Default). \n\nShorts VPWR to ground when not used (pin 3-2)\n
 Wire Wire Line
@@ -1870,4 +1861,7 @@ Wire Wire Line
 	6025 2825 7850 2825
 Wire Wire Line
 	8375 2725 6025 2725
+Wire Wire Line
+	2150 2025 2700 2025
+NoConn ~ 2150 2125
 $EndSCHEMATC

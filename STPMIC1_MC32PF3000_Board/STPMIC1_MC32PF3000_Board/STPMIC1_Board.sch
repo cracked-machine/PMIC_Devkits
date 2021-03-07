@@ -241,39 +241,22 @@ F 3 "" H 13975 8525 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2625 2150 3075 2150
-Text Label 3075 2150 2    50   ~ 0
+	2375 2200 2825 2200
+Text Label 2825 2200 2    50   ~ 0
 VBAT
-NoConn ~ 2625 2350
-NoConn ~ 2625 2450
-NoConn ~ 2625 2550
 Wire Wire Line
-	2325 2750 2325 2850
+	2575 2400 2575 2500
 $Comp
 L power:GNDS #PWR?
 U 1 1 60878CA7
-P 2325 2850
+P 2575 2500
 AR Path="/60878CA7" Ref="#PWR?"  Part="1" 
 AR Path="/6085A652/60878CA7" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 2325 2600 50  0001 C CNN
-F 1 "GNDS" H 2330 2677 50  0000 C CNN
-F 2 "" H 2325 2850 50  0001 C CNN
-F 3 "" H 2325 2850 50  0001 C CNN
-	1    2325 2850
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2225 2750
-$Comp
-L Connector:USB_B_Micro J?
-U 1 1 60878C9B
-P 2325 2350
-AR Path="/60878C9B" Ref="J?"  Part="1" 
-AR Path="/6085A652/60878C9B" Ref="J4"  Part="1" 
-F 0 "J4" H 2382 2817 50  0000 C CNN
-F 1 "USB_B_Micro" H 2382 2726 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 2475 2300 50  0001 C CNN
-F 3 "https://www.molex.com/molex/products/part-detail/io_connectors/1050170001" H 2475 2300 50  0001 C CNN
-	1    2325 2350
+F 0 "#PWR0109" H 2575 2250 50  0001 C CNN
+F 1 "GNDS" H 2580 2327 50  0000 C CNN
+F 2 "" H 2575 2500 50  0001 C CNN
+F 3 "" H 2575 2500 50  0001 C CNN
+	1    2575 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1467,4 +1450,33 @@ Wire Wire Line
 	9225 2150 8875 2150
 Text Notes 7025 8800 0    118  ~ 0
 OUTPUT POWER INDICATORS
+$Comp
+L Connector:Barrel_Jack J4
+U 1 1 608BA36B
+P 2075 2300
+F 0 "J4" H 2132 2625 50  0000 C CNN
+F 1 "Barrel_Jack" H 2132 2534 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2125 2260 50  0001 C CNN
+F 3 "~" H 2125 2260 50  0001 C CNN
+	1    2075 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2575 2400 2375 2400
+$Comp
+L power:PWR_FLAG #FLG0114
+U 1 1 608FAE9D
+P 2950 2500
+F 0 "#FLG0114" H 2950 2575 50  0001 C CNN
+F 1 "PWR_FLAG" H 2950 2673 50  0000 C CNN
+F 2 "" H 2950 2500 50  0001 C CNN
+F 3 "~" H 2950 2500 50  0001 C CNN
+	1    2950 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 2500 2950 2400
+Wire Wire Line
+	2950 2400 2575 2400
+Connection ~ 2575 2400
 $EndSCHEMATC

@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name STPMIC1)(type KiCad)(uri ${KIPRJMOD}/../../../KicadLibrary/footprint/PWR/PMIC/STPMIC1.pretty)(options "")(descr ""))
   (lib (name TinyNetTies)(type KiCad)(uri ${KIPRJMOD}/../../../KicadLibrary/footprint/MISC/TinyNetTies.pretty)(options "")(descr ""))
+  (lib (name Panasonic_ML_series)(type KiCad)(uri ${KIPRJMOD}/../../../KicadLibrary/footprint/BATTERY/Panasonic_ML_series.pretty)(options "")(descr ""))
 )

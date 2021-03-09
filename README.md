@@ -4,7 +4,7 @@ Dual development board for evaluating STMicroElectronics STPMIC1 and NXP PF3000 
 
 ![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/layout-render/top.png)
 
-[Bill of Materials](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/bom/STPMIC1_MC32PF3000_Board_with_LCSC_Extended_Parts.csv)
+[Bill of Materials](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/bom/FULL_STPMIC1_MC32PF3000_Board.csv)
 
 Related application notes, datasheets and reference design can be found in this repository.
 

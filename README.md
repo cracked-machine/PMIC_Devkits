@@ -14,7 +14,7 @@ Below are circuit details with connector and jumper/switch details.
 
 ## PMIC #1: NXP PF300
 
-#### Board connector definitions
+### Board connector definitions
 
 | Connector | Description | Comment |
 |:---:|:---:|:---|
@@ -24,7 +24,7 @@ Below are circuit details with connector and jumper/switch details.
 |J23|Digital Interface<br>(see datasheet)|1: Ground<br>2: STANDBY<br>3: RESETBMCU<br>4: SD_VSEL<br>5: INTB<br>6: PWRON|
 |J21|PF3000 Power Output|Ground:<br>2,4,6,8,10,12,14,16,18,20,22,24,26<br><br>1: SW1B Buck <br>3: SW1A Buck <br>5: SWBST Boost<br>7: VSNVS LDO<br>9: VCCSD LDO<br>11: V33 LDO<br> 13: SW3 Buck<br>15: VREFDDR LDO<br>17: LDO4<br> 19: LDO3<br>21: SW2 Buck<br>23: LDO2<br> 25: LDO1
 
-#### Board jumper and switch definitions
+### Board jumper and switch definitions
 
 Warning: logic of jumpers can be inverted using the registers. See datasheet for details.
 
@@ -49,7 +49,7 @@ Warning: logic of jumpers can be inverted using the registers. See datasheet for
 
 
 
-#### Schematics
+### Schematics
 
 | PF3000 Board Schematic | PF3000 IC Schematic |
 |:---:|:---:|
@@ -57,7 +57,7 @@ Warning: logic of jumpers can be inverted using the registers. See datasheet for
 
 ## PMIC #2: STMicroelectronics STPMIC1
 
-#### Board connector definitions
+### Board connector definitions
 
 | Connector | Description | Comment |
 |:---:|:---:|:---|
@@ -69,7 +69,7 @@ Warning: logic of jumpers can be inverted using the registers. See datasheet for
 |J5|Digital Interface<br>(see datasheet)|1: Ground<br>2: PONKEY (IN)<br>3: WAKEUP (IN)<br>4: RST (BOTH)<br>5: PWRCTL (IN)<br>6: INT (OUT)|
 |J21|STPMIC1 Power Output|Ground:<br>2,4,6,8,10,12,14,16,18,20,22,24,26<br><br>1: Buck2 <br>3: Buck1 <br>5: LDO4<br>7: VSWOUT LDO<br>9: VOTG LDO<br>11: Boost<br> 13: Buck3<br>15: Buck4<br>17: LDO1<br> 19: LDO6<br>21: LDO5<br>23: LDO2<br> 25: VREFDDR LDO<br>27: LDO3|
 
-#### Board jumper and switch definitions
+### Board jumper and switch definitions
 
 Warning: logic of some jumpers can be inverted using the registers. See datasheet for details.
 
@@ -89,7 +89,7 @@ Warning: logic of some jumpers can be inverted using the registers. See datashee
 |SW3|PONKEY| - |User power on key|
 
 
-#### Schematics
+### Schematics
 
 | PF3000 Board Schematic | PF3000 IC Schematic |
 |:---:|:---:|

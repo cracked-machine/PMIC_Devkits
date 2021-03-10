@@ -1,20 +1,35 @@
-# STPMIC1 / PF3000 PMIC Dev Board
+# <U>STPMIC1 / PF3000 PMIC Dev Board</U>
 
-Dual development board for evaluating STMicroElectronics STPMIC1 and NXP PF3000 Power Management ICs.
+Dual development board for evaluating two power management integrated circuits (PMIC) chips:
+
+- STMicroElectronics STPMIC1
+- NXP PF3000 Power Management ICs.
+
+These are organised into two independantly powered sub-systems.
 
 ![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/layout-render/top.png)
 
-[Bill of Materials](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/bom/FULL_STPMIC1_MC32PF3000_Board.csv)
 
-Related application notes, datasheets and reference design can be found in this repository.
+Each sub-system has a number of external power/signal connectors, along with a list of the jumpers used to configure how those connectors are routed to/from the PMIC chip. The PMICs are configured directly by modifying registers using either a MCU/MPU via the I2C connectors.
 
-RevA build files can be found in the gerbers directory.
+The schematic has a separate sheet for both sub-systems. There is one for each chip: 
 
-Below are circuit details with connector and jumper/switch details.
+- __DEV__ - The development board including power/config connectors. Used for testing only.
+- __MAIN__ - The individual PMIC including the required passive components for bypassing and SMPS/regulator operation. Designed to be reuseable blocks that can easily be incorproated into an existing design.
 
-## PMIC #1: NXP PF300
 
-### Board connector definitions
+
+The _docs_ directory contains:
+- RevA gerber build files.
+- [Bill of Materials](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/bom/FULL_STPMIC1_MC32PF3000_Board.csv)
+- CPL pick and place files.
+- Related vendor application notes, datasheets and reference designs.
+
+Custom symbols and footprints used in this project can be found in the [KicadLibrary](https://github.com/cracked-machine/KicadLibrary) repository.
+
+## <U>PMIC #1: NXP PF300</U>
+
+#### <U>Board connector definitions</U>
 
 | Connector | Description | Comment |
 |:---:|:---:|:---|
@@ -24,9 +39,9 @@ Below are circuit details with connector and jumper/switch details.
 |J23|Digital Interface<br>(see datasheet)|1: Ground<br>2: STANDBY<br>3: RESETBMCU<br>4: SD_VSEL<br>5: INTB<br>6: PWRON|
 |J21|PF3000 Power Output|Ground:<br>2,4,6,8,10,12,14,16,18,20,22,24,26<br><br>1: SW1B Buck <br>3: SW1A Buck <br>5: SWBST Boost<br>7: VSNVS LDO<br>9: VCCSD LDO<br>11: V33 LDO<br> 13: SW3 Buck<br>15: VREFDDR LDO<br>17: LDO4<br> 19: LDO3<br>21: SW2 Buck<br>23: LDO2<br> 25: LDO1
 
-### Board jumper and switch definitions
+#### <U>Board jumper and switch definitions</U>
 
-Warning: logic of jumpers can be inverted using the registers. See datasheet for details.
+Warning: function of jumpers can be inverted using the registers. See datasheet for details.
 
 | Jumper/Switch | Description| Setting | Comment |
 |:---:|:---:|:---:|:---|
@@ -49,15 +64,15 @@ Warning: logic of jumpers can be inverted using the registers. See datasheet for
 
 
 
-### Schematics
+#### <U>Schematics</U>
 
 | PF3000 Board Schematic | PF3000 IC Schematic |
 |:---:|:---:|
 |![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000_Board-PF3000_Board.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000-PF3000_Board-PF3000.svg)|
 
-## PMIC #2: STMicroelectronics STPMIC1
+## <U>PMIC #2: STMicroelectronics STPMIC1</U>
 
-### Board connector definitions
+#### <U>Board connector definitions</U>
 
 | Connector | Description | Comment |
 |:---:|:---:|:---|
@@ -69,9 +84,9 @@ Warning: logic of jumpers can be inverted using the registers. See datasheet for
 |J5|Digital Interface<br>(see datasheet)|1: Ground<br>2: PONKEY (IN)<br>3: WAKEUP (IN)<br>4: RST (BOTH)<br>5: PWRCTL (IN)<br>6: INT (OUT)|
 |J21|STPMIC1 Power Output|Ground:<br>2,4,6,8,10,12,14,16,18,20,22,24,26<br><br>1: Buck2 <br>3: Buck1 <br>5: LDO4<br>7: VSWOUT LDO<br>9: VOTG LDO<br>11: Boost<br> 13: Buck3<br>15: Buck4<br>17: LDO1<br> 19: LDO6<br>21: LDO5<br>23: LDO2<br> 25: VREFDDR LDO<br>27: LDO3|
 
-### Board jumper and switch definitions
+#### <U>Board jumper and switch definitions</U>
 
-Warning: logic of some jumpers can be inverted using the registers. See datasheet for details.
+Warning: function of jumpers can be inverted using the registers. See datasheet for details.
 
 | Jumper/Switch | Description| Setting | Comment |
 |:---:|:---:|:---:|:---|
@@ -89,7 +104,7 @@ Warning: logic of some jumpers can be inverted using the registers. See datashee
 |SW3|PONKEY| - |User power on key|
 
 
-### Schematics
+#### <U>Schematics</U>
 
 | PF3000 Board Schematic | PF3000 IC Schematic |
 |:---:|:---:|

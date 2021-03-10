@@ -51,9 +51,9 @@ Warning: logic of jumpers can be inverted using the registers. See datasheet for
 
 #### Schematics
 
-| PF3000 Main Schematic | PF3000 Board Schematic |
+| PF3000 Board Schematic | PF3000 IC Schematic |
 |:---:|:---:|
-|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000-PF3000_Board-PF3000.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000_Board-PF3000_Board.svg)|
+|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000_Board-PF3000_Board.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000-PF3000_Board-PF3000.svg)|
 
 ## PMIC #2: STMicroelectronics STPMIC1
 
@@ -91,9 +91,8 @@ Warning: logic of some jumpers can be inverted using the registers. See datashee
 
 #### Schematics
 
-| PF3000 Main Schematic | PF3000 Board Schematic |
+| PF3000 Board Schematic | PF3000 IC Schematic |
 |:---:|:---:|
-|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1-STPMIC1_Board-sheet60878B3D.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1_Board-STPMIC1_Board.svg)|
-
+|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1_Board-STPMIC1_Board.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1-STPMIC1_Board-sheet60878B3D.svg)
 
 

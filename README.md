@@ -1,5 +1,8 @@
 # <U>STPMIC1 / PF3000 PMIC Dev Board</U>
 
+
+#### Overview
+
 Dual development board for evaluating two power management integrated circuits (PMIC) chips:
 
 - STMicroElectronics STPMIC1
@@ -7,17 +10,41 @@ Dual development board for evaluating two power management integrated circuits (
 
 These are organised into two independantly powered sub-systems.
 
+Each sub-system has a number of external power/signal connectors, along with a list of the jumpers used to configure how those connectors are routed to/from the PMIC chip. The PMICs are configured directly by modifying registers using either a MCU/MPU via the I2C connectors.
+
+Each output has an LED indicator and testpoint. 
+_Note_ that the LED will only light if the PMIC output voltage is set above 2V.
+
 ![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/layout-render/top.png)
 
 
-Each sub-system has a number of external power/signal connectors, along with a list of the jumpers used to configure how those connectors are routed to/from the PMIC chip. The PMICs are configured directly by modifying registers using either a MCU/MPU via the I2C connectors.
-
+#### Circuit design notes
 The schematic has a separate sheet for both sub-systems. There is one for each chip: 
 
-- __DEV__ - The development board including power/config connectors. Used for testing only.
+- __DEV__ - The development board sub-system including power/config connectors.
 - __MAIN__ - The individual PMIC including the required passive components for bypassing and SMPS/regulator operation. Designed to be reuseable blocks that can easily be incorproated into an existing design.
 
+| PF3000 DEV | PF3000 MAIN |
+|:---:|:---:|
+|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1_Board-STPMIC1_Board.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1-STPMIC1_Board-sheet60878B3D.svg)
 
+| PF3000 DEV | PF3000 MAIN  |
+|:---:|:---:|
+|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000_Board-PF3000_Board.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000-PF3000_Board-PF3000.svg)|
+
+
+
+
+
+#### PCB layout notes
+This is a four layer PCB design. The layer stackup is:
+
+1. Signal
+2. Ground
+3. Small signal and power
+4. Small signal and ground
+
+Note the ground planes in layer 2 and 4 are connected.
 
 The _docs_ directory contains:
 - RevA gerber build files.
@@ -63,13 +90,6 @@ Warning: function of jumpers can be inverted using the registers. See datasheet 
 |J22|VPWR override|2-1|VPWR disable. <br>Set when J12 battery power connector is powered.<br>Warning: Shorts J15 to ground!|
 
 
-
-#### <U>Schematics</U>
-
-| PF3000 Board Schematic | PF3000 IC Schematic |
-|:---:|:---:|
-|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000_Board-PF3000_Board.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/PF3000-PF3000_Board-PF3000.svg)|
-
 ## <U>PMIC #2: STMicroelectronics STPMIC1</U>
 
 #### <U>Board connector definitions</U>
@@ -104,10 +124,5 @@ Warning: function of jumpers can be inverted using the registers. See datasheet 
 |SW3|PONKEY| - |User power on key|
 
 
-#### <U>Schematics</U>
-
-| PF3000 Board Schematic | PF3000 IC Schematic |
-|:---:|:---:|
-|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1_Board-STPMIC1_Board.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1-STPMIC1_Board-sheet60878B3D.svg)
 
 

@@ -24,7 +24,7 @@ The schematic has a separate sheet for both sub-systems. There is one for each c
 - __DEV__ - The development board sub-system including power/config connectors.
 - __MAIN__ - The individual PMIC including the required passive components for bypassing and SMPS/regulator operation. Designed to be reuseable blocks that can easily be incorproated into an existing design.
 
-| PF3000 DEV | PF3000 MAIN |
+| STPMIC1 DEV | STPMIC1 MAIN |
 |:---:|:---:|
 |![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1_Board-STPMIC1_Board.svg)|![](STPMIC1_MC32PF3000_Board/STPMIC1_MC32PF3000_Board/docs/schema/svg/STPMIC1-STPMIC1_Board-sheet60878B3D.svg)
 
